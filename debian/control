@@ -11,7 +11,7 @@ Standards-Version: 3.7.2
 
 Package: profiled
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, kernel-feature-errata-430973-workaround[armel]
 Description: profile daemon, manages user settings
  Gets default set of settings from profile data packages
  that are installed on the device.
@@ -33,7 +33,7 @@ Description: debug symbols for profiled
 
 Package: profileclient
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, kernel-feature-errata-430973-workaround[armel]
 Description: command line test tool for profiled
  The profileclient tool can be used to query/change
  profiles and profile values.
@@ -50,7 +50,7 @@ Description: debug symbols for profileclient
 Package: libprofile0
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, profiled (>= ${binary:Version})
+Depends: ${shlibs:Depends}, profiled (>= ${binary:Version}), kernel-feature-errata-430973-workaround[armel]
 Description: client library for communicating with profiled
  Dynamic library implementing the API use for accessing
  profile data managed by the profile daemon.

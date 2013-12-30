@@ -1,3 +1,9 @@
+profiled (0.30.2-1+0cssu1+thumb0) fremantle; urgency=low
+
+  * Thumb2 compile
+
+ -- Ivaylo Dimitrov <freemangordon@abv.bg>  Mon, 30 Dec 2013 07:48:43 +0200
+
 profiled (0.30.2-1+0cssu1) fremantle; urgency=low
 
   * Merge tag '0.30.2-1'
